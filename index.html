@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif
+}
+.mySlides {display: none}
+h1 {
+    margin-top: 75px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#gimp" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GIMP</a>
+    <a href="#excel" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EXCEL</a>
+    <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEO APSTRĀDE</a>
+    <a href="#inkscape" class="w3-bar-item w3-button w3-padding-large w3-hide-small">INKSCAPE</a>
+   
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#gimp" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GIMP</a>
+  <a href="#excel" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EXCEL</a>
+  <a href="#video" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIDEO APSTRĀDE</a>
+  <a href="#inkscape" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">INKSCAPE</a>
+</div>
+
+
+<div class="w3-container">
+<h1>Mans portfolio</h1>
+
+ <a href="otrais.html">otrais.html</a>
+        <h2>Ko es dariju šogad datorikā</h2>
+        
+        <ol>
+            <li>Mācijamies GIMP</li>
+            <li>Mācijamies Excel</li>
+            <li>Mācijamies Video apstrāde</li>
+            <li>Mācijamies Word</li>
+            <li>Mācijamies Inkscape</li>
+        </ol>
+        
+ <div id="gimp">
+     <div class="w3-panel w3-pale-blue">
+      <p>GIMP</p>
+      <img src="images/zimejums.svg" alt="plakāts" width="300">
+     </div>
+  </div>
+  
+
+  <div class="w3-pale-green" id="excel">
+      <p>Excel</p>
+      <img src="images/exel.png" alt="grafiks" width="300">
+  </div>
+
+
+  <div class="w3-panel w3-pale-yellow" id="video">
+      <p>Video apstrāde</p>
+      <pre>arlsjkgbldfmnbnlb nk;b art;jhartj;hbtjphbna
+          
+          
+          zrtptbhjsrt[uishrtyirthnysjarhynarjipyh[tjyn54[uitgaerit
+          fhkfkfuyhkkf
+          kl
+          ,ljk
+          l
+          fi
+          kl
+          fiu
+          l
+          l
+          iflyerjituertbprtphbtiojhmbtaepruighpge4jhmrpguhrtmphksrtjyhijrtphiskkukukuk</pre>
+  </div>
+
+
+<div class="w3-pale-red" id="inkscape">
+      <p>Inkscape</p>
+      <pre>arlsjkgbldfmnbnfjlljblfhk
+          hjkhjkjhkcfhkjhk
+          k
+          h
+          k
+          
+          
+          
+          
+          
+          f
+          hkukuikfykf
+          ykfkkfuykfiuink;b art;jhartj;hbtjphbnazrtptbhjsrt[uishrtyirthnysjarhynarjipyh[tjyn54[uitgaerityerjitue
+          rtbprtphbtiojhmbtaepruighpge4jhmrpguhrtmphksrtjyhijrtphiskkukukuk</pre>
+  </div>
+
+
+</div>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
