@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
 <title>Mans Portfolio</title>
 <meta charset="UTF-8">
@@ -7,14 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif
-}
-.mySlides {display: none}
-h1 {
-    margin-top: 75px;
-}
-</style>
+<link rel="stylesheet" href="CSS/mansStils.css">
 </head>
 <body>
 
@@ -22,68 +15,102 @@ h1 {
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="#gimp" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GIMP</a>
-    <a href="#excel" class="w3-bar-item w3-button w3-padding-large w3-hide-small">EXCEL</a>
-    <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small">VIDEO APSTRĀDE</a>
-    <a href="#inkscape" class="w3-bar-item w3-button w3-padding-large w3-hide-small">3D MODELĒŠANA</a>
-   
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Sākums</a>
+    <a href="#word" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Teksta apstrāde</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button w3-padding-large">Attēlu apstrāde <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-white">
+        <a href="#rastr" class="w3-bar-item w3-button">Rastrgrafika</a>
+        <a href="#vektor" class="w3-bar-item w3-button">Vektorgrafika</a>
+      </div>
+    </div>
+    <a href="#model" class="w3-bar-item w3-button w3-padding-large w3-hide-small">3D Modelēšana</a>
+    <a href="#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Video</a>
+    <a href="#excel" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Izklājlapas</a>
+    <a href="otrais.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Individuālā tēma</a>
+
+    
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#gimp" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GIMP</a>
-  <a href="#excel" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">EXCEL</a>
-  <a href="#video" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">VIDEO APSTRĀDE</a>
-  <a href="#inkscape" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">3D MODELĒŠANA</a>
+  <a href="#word" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Teksta apstrāde</a>
+  <a href="#gimp" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Attēlu apstrāde</a>
+  <a href="#model" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">3D Modelēšana</a>
+  <a href="#video" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Video</a>
+  <a href="#excel" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Izklājlapas</a>
+  <a href="otrais.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Individuālā tēma</a>
+
+  
+  
 </div>
 
 
-<div class="w3-container">
-<h1>Mans portfolio</h1>
+<div class="w3-container w3-black">
+    <div class="font-color-white">
+        <br><br><br>        
+    <h1>Mans portfolio</h1>
 
- <a href="otrais.html">otrais.html</a>
-        <h2>Ko mēs darijām šogad datorikā:</h2>
-        
-        <ul>
-            <li>Mācijāmies GIMP</li>
-            <li>Mācijāmies Excel</li>
-            <li>Mācijāmies Video apstrāde</li>
-            <li>Mācijāmies Word</li>
-            <li>Mācijāmies 3D Modelēšanau</li>
-        </ul>
-        
+     
+            <h2>Ko mēs darijām šogad datorikā:</h2>
+
+            <ul>
+                <li>Mācijāmies Word</li>
+                <li>Mācijāmies GIMP</li>
+                <li>Mācijāmies Thinkercad</li>
+                <li>Mācijāmies Clipchamp</li>
+                <li>Mācijāmies Excel</li>
+            </ul>
+
+    </div>
+    
+    <div id="word">
+     <div class="w3-panel w3-pale-blue">
+      <h3>Word</h3>
+      <p>Mēs izmantojām Word lai noformētu un sakartotu textu.</p>
+      <img src="images/word.jpg" alt="word teksts" width="300">
+     </div>
+  </div>
+    
  <div id="gimp">
      <div class="w3-panel w3-pale-blue">
-      <p>GIMP</p>
-      <img src="images/zimejums.svg" alt="plakāts" width="300">
+      <h3>GIMP</h3>
+      <p>Mēs programā GIMP apstradājām attelus un taisijam savus GIF, kā arī taisijam vektorgrafikus.</p>
+        <ul>
+            <li>    
+                <h4 id='rastr'>Mans GIF:</h4>
+                <img src="images/stickman.gif" alt="stickman gif" width="300">
+            </li>
+            <li>
+                <h4 id='vektor'>Mūsu logo piedāvājums:</h4>  
+                <img src="images/pasutijums.png" alt="rumba plakats" width="300">
+            </li>
+        </ul>
      </div>
   </div>
   
-
-  <div class="w3-pale-green" id="excel">
-      <p>Excel</p>
-      <img src="images/exel.png" alt="grafiks" width="300">
+    <div class="w3-pale-red" id="model">
+      <h3>3D modelēšana</h3>
+      <p>Mēs šogad modelējām programā Thinkercad, kur mums bija jāuzdizainē no puzles gabaliņiem kubs.</p>
+      <img src="images/puzlesgabalins.png" alt="puzles gabalins" width="300">
   </div>
 
-
-  <div class="w3-panel w3-pale-yellow" id="video">
-      <p>Video apstrāde</p>
+    <div class="w3-panel w3-pale-yellow" id="video">
+      <h3>Video apstrāde</h3>
+      <p>Izmantojot uzfilmēto no 3D modelēšanas tēmas mēs taisiām video programā Clipchamp.</p>
       <video width="400" controls>
   <source src="images/video.mp4" type="video/mp4">
   <source src="images/video.ogg" type="video/ogg">
   Your browser does not support HTML video.
 </video>
   </div>
-
-
-<div class="w3-pale-red" id="inkscape">
-      <p>3D modelēšana</p>
-      <img src="images/puzlesgabalins.png" alt="puzles gabalins" width="300">
+    
+  <div class="w3-pale-green" id="excel">
+      <h3>Excel</h3>
+      <p>Šogad Excel programā mēs apguvām dažādas funkcijas kā: IF; SUM; AVERAGE; utt.</p>
+      <img src="images/exel.png" alt="grafiks" width="300">
   </div>
-
 
 </div>
 

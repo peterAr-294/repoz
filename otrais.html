@@ -1,17 +1,81 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <a href="index.html">index.html</a>
-        <div>TODO write content</div>
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2lsYWljcHlmcng4dWo1MHA3ZnlibnI3cTA4Mm50dW5venZnMjBvZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/TpEINJrrbrGYo/giphy.gif" alt="cat">
-    </body>
+<html lang="en">
+<head>
+<title>Mans Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="CSS/mansStils.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Sākums</a>
+    <a href="index.html#word" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Teksta apstrāde</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-button w3-padding-large">Attēlu apstrāde <i class="fa fa-caret-down"></i></button>
+      <div class="w3-dropdown-content w3-bar-block w3-white">
+        <a href="index.html#rastr" class="w3-bar-item w3-button">Rastra grafika</a>
+        <a href="index.html#vektor" class="w3-bar-item w3-button">Vektorgrafika</a>
+      </div>
+    </div>
+    <a href="index.html#model" class="w3-bar-item w3-button w3-padding-large w3-hide-small">3D Modelēšana</a>
+    <a href="index.html#video" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Video</a>
+    <a href="index.html#excel" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Izklājlapas</a>
+    
+
+    
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="index.html#word" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Teksta apstrāde</a>
+  <a href="index.html#gimp" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Attēlu apstrāde</a>
+  <a href="index.html#model" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">3D Modelēšana</a>
+  <a href="index.html#video" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Video</a>
+  <a href="index.html#excel" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Izklājlapas</a>
+
+  
+  
+</div>
+
+
+<div class="w3-container w3-black">
+    <div class="font-color-white">
+        <br><br><br>        
+    <h1>Mans individualās tēmas</h1>
+    
+    <ul>
+        <li><a href='dzer.html'>Dzer</a></li>
+        <li><a href='dzerdaudz.html'>Dzer daudz</a></li>
+        <li><a href='forma.html'>Forma</a></li>
+    </ul>
+<script>
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
 </html>

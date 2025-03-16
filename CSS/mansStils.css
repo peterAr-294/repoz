@@ -1,0 +1,15 @@
+body {
+    /*Izvelas kadu fontu redzes lietotajs*/
+    font-family: "Lato", sans-serif;
+    
+    /*Fona krasa ir melna*/
+    background-color: black;
+    
+    /*Taksta krasa ir balta*/
+    color: white;
+}
+
+.mySlides {
+    display: none;
+}
+
