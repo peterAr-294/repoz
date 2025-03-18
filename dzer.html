@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <title>Formas</title>
     <link href="CSS/mansStils.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: #333
+}
+
+h1 {
+    color: #ff1493; 
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+p, div {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ff1493; 
+}
+
+input[type="radio"] {
+    margin-left 10px; 
+}
+
+input[type="button"], button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+input[type="button"]:hover, button:hover {
+    background-color: #ff1493;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    margin-top: 20px;
+}
+</style>
+
 <script>
 function maksa(){
 	let dz = document.getElementsByName('drink');
@@ -16,6 +75,7 @@ function maksa(){
     document.getElementById("maksa").innerHTML="Jāmaksā "+sum;
  }   
 </script>
+
 <p>Izvēlies dzērienu:</p>
 <form>
   <input type="radio" id="kafija" name="drink" value="3.60">
@@ -32,7 +92,7 @@ function maksa(){
   <span id="maksa"></span>
 </form> 
 <br><br>
-<a href='otrais.html'>Atpakaļ</a>
+<button><a href='index.html'>Atpakaļ</a></button>
 
 </body>
 </html>

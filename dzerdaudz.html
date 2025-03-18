@@ -5,7 +5,81 @@
     <title>Formas</title>
     <link href="CSS/mansStils.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333; /* Tumši pelēks teksts */
+    margin-bottom: 20px;
+}
+
+form {
+    background: #fff; /* Balts panelis */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+label {
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 0;
+    color: #333; /* Tumšāks teksts, lai redzams uz balta fona */
+}
+
+input[type="checkbox"] {
+    transform: scale(1.3);
+    margin-right: 10px;
+}
+
+#maksa {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #d63384; 
+    
+}
+
+input[type="button"], button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+input[type="button"]:hover, button:hover {
+    background-color: #ff1493;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+button {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+    </style>
+    
 <script>
 function maksa(){
 	let dz = document.getElementsByTagName('input');
@@ -16,6 +90,7 @@ function maksa(){
     document.getElementById("maksa").innerHTML="Jāmaksā "+sum;
  }   
 </script>
+<body>
 <p id="maksa"></p>
 <form>
   <input type="checkbox" id="kafija" name="kafija" value="3.60">
@@ -33,7 +108,7 @@ function maksa(){
   <input type="button" id="poga" value="jāmaksā" onclick="maksa()">
 </form>
 <br><br>
-<a href='otrais.html'>Atpakaļ</a>
+<button><a href='index.html'>Atpakaļ</a></button>
 
 </body>
 </html>
